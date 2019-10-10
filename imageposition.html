@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta content="text/html; charset=euc-kr">
+    <title>HTML5</title>
+    <style>
+    html {
+        background: #fff;
+        min-height: 100vh;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+
+    body {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #c8c8c8;
+        position: relative;
+    }
+
+    body>header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 2.5rem;
+        background-color: red;
+        z-index: 1;
+    }
+
+    body>aside {
+        position: absolute;
+        top: 2.5rem;
+        height: calc(100vh - 2.5rem);
+        width: 150px;
+    }
+
+    body>aside.left {
+        left: 0;
+    }
+
+    body>aside.right {
+        right: 0;
+    }
+
+    body>section {
+        position: absolute;
+        top: 2.5rem;
+        width: calc(100% - (150px * 2));
+        left: 150px;
+        background-color: #fff;
+    }
+    body>.bottom {
+
+    }
+    </style>
+    <style>
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        HELLO HEADER
+    </header>
+    <aside class="left">
+        <ul>
+            <li>HELLO ITEM1</li>
+            <li>HELLO ITEM2</li>
+            <li>HELLO ITEM3</li>
+        </ul>
+    </aside>
+    <section>
+        <article>
+            HELLO ARTICLE1
+        </article>
+        <article>
+            HELLO ARTICLE2
+            <!-- <img src="C:\Users\NEOIS-DEV3\Pictures\Saved Pictures\1.png"> -->
+        </article>
+    </section>
+    <aside class="right">
+        <ul>
+            <li>HELLO AD1</li>
+            <li>HELLO AD2</li>
+            <li>HELLO AD3</li>
+        </ul>
+    </aside>
+    <footer class="bottom">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+           </ul>
+    </footer>
+</body>
+
+</html>

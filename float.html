@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .dawn {
+        background: #b3cae5;
+        background: -moz- linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(12%, #b3cae5), color-stop(46%, #dbdde4), color-stop(70%, #e4e3e4), color-stop(94%, #f7ddbb), color-stop(100%, #efcab2));
+        /* Chrome10+,Safari5.1+ */
+        background: -webkit-linear-gradient(-45deg, #b3cae5 12%, #dbdde4 46%, #e4e3e4 70%, #f7ddbb 94%, #efcab2 100%);
+    }
+
+    .container {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: #def0c2;
+        /*overflow: hidden;*/
+    }
+
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .d1,
+    .d2 {
+        float: left;
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    .d1 {
+        background-color: #59b1f6;
+    }
+
+    .d2 {
+        background-color: #ffb5b4;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="dawn"></div>
+    <div class="container clearfix">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+    </div>
+    <div style="background:red;padding:10px;color:white;">3</div>
+  
+</body>
+
+</html>

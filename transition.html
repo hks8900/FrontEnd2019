@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    .animation1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        animation-name: move, fadeOut, changeColor;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-direction: alternate;
+    }
+
+    /* @keyframes rule */
+    @keyframes move {
+
+        0% {
+            left: 0;
+        }
+
+        50% {
+            left: 100px;
+        }
+
+        100% {
+            left: 300px;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes changeColor {
+        from {
+            background-color: red;
+        }
+
+        to {
+            background-color: blue;
+        }
+    }
+
+    .animation2 {
+        width: 100px;
+        height: 100px;
+        top:400px;
+        left: 10px;
+        background: red;
+        position: absolute;
+        animation: myAnimation 5s infinite;
+        /*홀수번째는 normal로, 짝수번째는 reverse로 진행*/
+        animation-direction: alternate;
+    }
+
+    .animation2:hover {
+
+        animation-play-state: paused;
+    }
+
+    .animation2:active {
+
+        animation-play-state: running;
+    }
+
+    @keyframes myAnimation {
+        0% {
+            background: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .animation3 {
+        position: relative;
+        top: 400px;
+        left: 1000px;
+        line-height: 300px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: myAnimation;
+        animation-duration: 5s;
+        animation-play-state: paused;
+        /* 초기 애니메이션 재생 상태: 정지 */
+        animation-iteration-count: infinite;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="animation1"></div>
+    <div class="animation2"></div>
+    <div class="animation3">
+            <button class="start">start animation</button>
+            <button class="pause">pause animation</button>
+            <script>
+            const animation3 = document.querySelector('.animation3');
+
+            document.querySelector('.start').addEventListener('click', function() {
+                // trigger animation
+                // prefixes would be needed...
+                animation3.style.animationPlayState = 'running';
+            });
+
+            document.querySelector('.pause').addEventListener('click', function() {
+                // pause animation
+                // prefixes would be needed...
+                animation3.style.animationPlayState = 'paused';
+            });
+            </script>
+        </div>
+</body>
+
+</html>

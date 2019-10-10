@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    	@import url(http://fonts.googleapis.com/css?family-Open+Sans:300,400);
+
+    div {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        margin: 40px;
+        border-radius: 9px;
+        border-color: gray;
+        border-style: dotted;
+    }
+    .normal{white-space: normal;}
+    .nowrap { white-space: nowrap; }
+    .pre {white-space: pre;}
+    .pre-wrap {white-space: pre-wrap;}
+    .pre-line {white-space: pre-line;}
+    .word-wrap {word-wrap: break-word;}
+
+    body {
+       /* background-image: url("https://nodejs.org/static/images/logo.svg"), url("https://nodejs.org/static/images/logo.svg");
+        background-repeat: no-repeat, repeat;*/
+        font-family: "Helvatica Neue", Helvatica,Arial,sans-serif;
+        color:#58666e;
+        background-color: #f0f3f4;
+    }
+
+    .font-size-40,.mixed {
+        font-size: 100px;
+    }
+
+    .serif,.mixed {
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .iltalic {
+        font-style: 2.0em;
+    }
+
+    .light {
+        font-weight: lighter;
+    }
+
+    .thicker,.mixed {
+        font-weight: bold;
+    }
+    
+    </style>
+    <title></title>
+</head>
+
+<body>
+	<h1>wird-wrap</h1>
+	<div > 
+		abcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmn
+		abcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmn
+	</div>
+	<div class="word-wrap"> 
+		abcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmn
+		abcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmnabcdefghijklmn
+	</div>
+    <h3> background Image</h3>
+    <p class="font-size-40 serif thicker"> font test: 40px serif thicker </p>
+    <p class="serif"> font test 40px </p>
+    <p class="serif,font-size-40,lighter"> font test lighter</p>
+    <p class="thicker"> font test thicks</p>
+    <p class="mixed">mixed</p>
+    <div class="normal"> <h3>normal</h3>
+    	am i look like hungry? yes you correct! precisely. really bloody
+    </div>
+    <div class="nowrap"> <h3>nowrap</h3>
+    	am i look like hungry? yes you correct! precisely. really bloody
+    </div>
+     <div class="pre"> <h3>pre</h3>
+    	am i look like hungry? yes you correct! precisely. really bloody
+    </div>
+     <div class="pre-wrap"> <h3>pre-wrap</h3>
+    	am i look like hungry? yes you correct! precisely. really bloody
+    </div>
+     <div class="pre-line"> <h3>pre-line</h3>
+    	am i look like hungry? yes you correct! precisely. really bloody
+    </div>
+</body>
+
+</html>
